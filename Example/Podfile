@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SalesManItemCategory_Example' do
+  pod 'SalesManItemCategory', :path => '../'
+
+  target 'SalesManItemCategory_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
