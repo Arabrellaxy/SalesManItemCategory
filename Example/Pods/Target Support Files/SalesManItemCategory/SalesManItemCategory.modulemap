@@ -1,0 +1,6 @@
+framework module SalesManItemCategory {
+  umbrella header "SalesManItemCategory-umbrella.h"
+
+  export *
+  module * { export * }
+}

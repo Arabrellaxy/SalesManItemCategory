@@ -1,8 +1,11 @@
 use_frameworks!
+source 'https://github.com/Arabrellaxy/XYSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 target 'SalesManItemCategory_Example' do
   pod 'SalesManItemCategory', :path => '../'
-
+  pod 'SalesManNetwork'
+  pod 'SalesManGlobal'
   target 'SalesManItemCategory_Tests' do
     inherit! :search_paths
 
