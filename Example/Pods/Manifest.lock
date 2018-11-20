@@ -20,9 +20,9 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - MBProgressHUD (1.1.0)
-  - SalesManGlobal (0.6.0):
+  - SalesManGlobal (0.7.0):
     - MBProgressHUD
-  - SalesManItemCategory (0.1.0):
+  - SalesManItemCategory (0.2.0):
     - SalesManGlobal
     - SalesManNetwork
   - SalesManNetwork (1.0.3):
@@ -42,8 +42,8 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  SalesManGlobal: df77526ff87148785f472107f8dc2cb3382a3996
-  SalesManItemCategory: 5c3f1b2851349e0a94f479785e8678054c92d6e0
+  SalesManGlobal: 3189ba00467cd8d9a4e8894c5b0c99be4cab2cd6
+  SalesManItemCategory: bd46d0475f061477f78fd32e5de316813cfbede3
   SalesManNetwork: f4e91d3a02cbcd0444ed66a54cd43ca1a2e4db99
 
 PODFILE CHECKSUM: 95bb0cab178efd8a74041a06870a64f5be9b9fc8

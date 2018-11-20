@@ -1,6 +1,6 @@
 {
   "name": "SalesManItemCategory",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "SalesManItemCategory.",
   "swift_version": "4.0",
   "description": "TODO: Add long description of the pod here.",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Arabrellaxy/SalesManItemCategory.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

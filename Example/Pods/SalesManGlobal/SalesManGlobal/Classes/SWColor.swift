@@ -32,8 +32,8 @@ extension UIColor {
     }
     public  class func swColorWithHexValue(hexValue:Int) -> UIColor {
         return UIColor.init(red:((CGFloat)((hexValue & 0xFF0000) >> 16))/255.0,
-            green:((CGFloat)((hexValue & 0x00FF00) >>  8))/255.0,
-            blue:((CGFloat)((hexValue & 0x0000FF) >>  0))/255.0,
-            alpha:1.0)
+                            green:((CGFloat)((hexValue & 0x00FF00) >>  8))/255.0,
+                            blue:((CGFloat)((hexValue & 0x0000FF) >>  0))/255.0,
+                            alpha:1.0)
     }
 }
