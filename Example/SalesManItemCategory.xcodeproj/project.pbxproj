@@ -44,7 +44,7 @@
 		95C1F1727630813BC0CEFFBE /* Pods_SalesManItemCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManItemCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76138B7DA4266F229322762 /* Pods_SalesManItemCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalesManItemCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5473FF943013E1B9F3C5C17 /* Pods-SalesManItemCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalesManItemCategory_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalesManItemCategory_Tests/Pods-SalesManItemCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EEE5BD2A6364E0DACFE1AAD4 /* SalesManItemCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SalesManItemCategory.podspec; path = ../SalesManItemCategory.podspec; sourceTree = "<group>"; };
+		EEE5BD2A6364E0DACFE1AAD4 /* SalesManItemCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SalesManItemCategory.podspec; path = ../SalesManItemCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
