@@ -6,14 +6,13 @@
 //
 
 import UIKit
-
 class Target_SalesManItemCategory : NSObject {
-    @objc  func Action_viewController(_ params:[AnyHashable:Any]?) -> UIViewController{
+    @objc  func Action_viewController(_ params:[AnyHashable:Any]?) -> UINavigationController{
         let bundle1 = Bundle.init(for: SWViewController.classForCoder())
         let path = bundle1.path(forResource: "SalesManItemCategory", ofType: "bundle")!
         
         let bundle:Bundle = Bundle.init(path:path)!
-        let vc:SWViewController = UIStoryboard.init(name: "Main", bundle: bundle).instantiateViewController(withIdentifier: "category") as! SWViewController
+        let vc:UINavigationController = UIStoryboard.init(name: "Main", bundle: bundle).instantiateInitialViewController() as! UINavigationController
         return vc
     }
 }

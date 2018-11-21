@@ -76,6 +76,9 @@ extension SWCollectionView:UICollectionViewDelegate,UICollectionViewDataSource,U
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize.init(width: collectionView.bounds.size.width, height: 50)
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize.zero
+    }
 }
 
 extension SWCollectionView:SWCollectionReusableViewDelegate {
