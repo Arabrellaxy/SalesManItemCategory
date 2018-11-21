@@ -38,7 +38,7 @@ class SWAPIReformer: NSObject {
         for  tempCategory  in array {
             let tempCategoryItem:SWCateogryItem = SWCateogryItem.init()
             tempCategoryItem.name = (tempCategory as! NSDictionary).object(forKey: "name") as? String
-            tempCategoryItem.categoryID = (tempCategory as! NSDictionary).object(forKey: "id") as? String
+            tempCategoryItem.categoryID = (tempCategory as! NSDictionary).object(forKey: "id") as? Int ?? 0
             let tempChilds:NSArray? = (tempCategory as! NSDictionary).object(forKey: "childs") as? NSArray
             if let _ = tempChilds {
                 tempCategoryItem.childs = self.analysisResultByResult(array: tempChilds!)

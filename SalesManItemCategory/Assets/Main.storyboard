@@ -62,7 +62,7 @@
                                 </prototypes>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SbS-cz-lHk" customClass="SWCollectionView" customModule="SalesManItemCategory" customModuleProvider="target">
-                                <rect key="frame" x="112.5" y="64" width="262.5" height="593"/>
+                                <rect key="frame" x="112.5" y="64" width="262.5" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jmP-2N-PRB">
                                     <size key="itemSize" width="110" height="92"/>
@@ -135,7 +135,7 @@
                             <constraint firstItem="b3R-6Q-4cV" firstAttribute="leading" secondItem="4BE-je-ERD" secondAttribute="leading" id="CHB-bg-Hs7"/>
                             <constraint firstItem="SbS-cz-lHk" firstAttribute="leading" secondItem="b3R-6Q-4cV" secondAttribute="trailing" id="K4r-iF-5XT"/>
                             <constraint firstItem="b3R-6Q-4cV" firstAttribute="bottom" secondItem="4BE-je-ERD" secondAttribute="bottom" id="LDC-2V-WKE"/>
-                            <constraint firstItem="4BE-je-ERD" firstAttribute="bottom" secondItem="SbS-cz-lHk" secondAttribute="bottom" constant="10" id="LuA-dm-5C4"/>
+                            <constraint firstItem="4BE-je-ERD" firstAttribute="bottom" secondItem="SbS-cz-lHk" secondAttribute="bottom" id="LuA-dm-5C4"/>
                             <constraint firstItem="SbS-cz-lHk" firstAttribute="top" secondItem="4BE-je-ERD" secondAttribute="top" id="OJM-pi-MJU"/>
                             <constraint firstItem="b3R-6Q-4cV" firstAttribute="top" secondItem="4BE-je-ERD" secondAttribute="top" id="j4d-ba-6y6"/>
                             <constraint firstItem="b3R-6Q-4cV" firstAttribute="width" secondItem="7Fq-gw-jnn" secondAttribute="width" multiplier="0.3" id="rYv-we-tDh"/>

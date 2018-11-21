@@ -10,7 +10,7 @@ import UIKit
 class SWCateogryItem: NSObject {
     var name: String?
     var folded: Bool = false
-    var categoryID: String?
+    var categoryID: Int?
     var childs: NSArray?
     override init() {
         super.init()

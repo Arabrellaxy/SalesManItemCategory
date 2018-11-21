@@ -55,35 +55,25 @@ extension SWViewController{
     func requestData() ->()  {
         self.view.showLoadingHud(loadingText: "正在请求数据")
         let callBack = { (responseDic : NSDictionary)  in
+            self.view.hideHud()
             let status = responseDic.object(forKey: SWGlobal.status) as? Bool
             guard let _ = status else {
                 return
             }
             if status! {
-                SalesManAFNetworkAPI.shareInstance.saveCookies()
-                SalesManAFNetworkAPI.shareInstance.requestItemCategory { (resultDic) in
-                    self.view.hideHud()
                     self.apiReformer = SWAPIReformer()
-                    let (failureMessage,resultArray) = (self.apiReformer?.reformWithResponse(value: resultDic))!
+                    let (failureMessage,resultArray) = (self.apiReformer?.reformWithResponse(value: responseDic))!
                     if failureMessage != nil {
                         self.view.showTextHud(text: failureMessage!, autoHide: true)
                     } else {
                         self.tableView.showContentWith(valueArray: (resultArray! as NSArray))
                     }
-                }
-                SalesManAFNetworkAPI.shareInstance.saveCookies()
             } else {
-                var message = responseDic.object(forKey: SWGlobal.message) as? String
-                guard let _ = message else{
-                    message = "账号或密码错误"
-                    return
-                }
+                let message = responseDic.object(forKey: SWGlobal.message) as? String ?? "数据加载失败,请重试"
+                self.view.showTextHud(text: message, autoHide: true)
             }
         }
-        SalesManAFNetworkAPI.shareInstance.loginWithParam([SWLogin.username:"xieyan",
-                                                           SWLogin.password:"111111",
-                                                           SWGlobal.callBack:callBack])
-      
+        SalesManAFNetworkAPI.shareInstance.requestItemCategory(completion: callBack)
     }
 }
 //MARK:TableView & Collection Delegate
